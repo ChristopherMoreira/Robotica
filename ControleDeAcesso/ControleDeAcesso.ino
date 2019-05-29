@@ -450,7 +450,7 @@ bool isMaster( byte test[] ) {
 bool monitorbotaoutton(uint32_t interval) {
   uint32_t now = (uint32_t)millis();
   while ((uint32_t)millis() - now < interval)  {
-    // check on every half a second
+    // verifique a cada meio segundo
     if (((uint32_t)millis() % 500) == 0) {
       if (digitalRead(botao) != LOW)
         return false;
